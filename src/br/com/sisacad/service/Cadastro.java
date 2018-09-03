@@ -12,7 +12,7 @@ public class Cadastro {
 	 * cadastrado com sucesso e false caso contrário.
 	 * para o usuário poder ser cadastrado ele precisa atender alguns requisitos.
 	 */
-	public boolean cadastrodeusuario(String email, String senha, String login, String nome, String datadenascimento, boolean estudante){
+	public boolean cadastrarUsuario(String email, String senha, String login, String nome, String dataNasc, boolean estudante){
 		if(email.contains("@")){
 			if(!senha.isEmpty()){
 				if(senha.length() > 6){
