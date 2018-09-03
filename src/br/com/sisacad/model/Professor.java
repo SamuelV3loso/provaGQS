@@ -4,27 +4,27 @@ import java.util.Calendar;
 
 public class Professor extends Usuario{
 	
-	private String nomeDoProfessor;
-	private Calendar datanasc;	
+	private String nomeProfessor;
+	private Calendar dataNasc;	
 	
-	public Professor(String login, String email, String senha, String nomeDoProfessor, Calendar datanasc) {
+	public Professor(String login, String email, String senha, String nomeProfessor, Calendar dataNasc) {
 		setLogin(login);
 		setEmail(email);
 		setSenha(senha);
-		this.nomeDoProfessor = nomeDoProfessor;
-		this.datanasc = datanasc;
+		this.nomeProfessor = nomeProfessor;
+		this.dataNasc = dataNasc;
 	}
 	public String getNomeDoProfessor() {
-		return nomeDoProfessor;
+		return nomeProfessor;
 	}
-	public void setNomeDoProfessor(String nomeDoProfessor) {
-		this.nomeDoProfessor = nomeDoProfessor;
+	public void setNomeDoProfessor(String nomeProfessor) {
+		this.nomeProfessor = nomeProfessor;
 	}
-	public Calendar getData_nasc() {
-		return datanasc;
+	public Calendar getDataNasc() {
+		return dataNasc;
 	}
-	public void setData_nasc(Calendar datanasc) {
-		this.datanasc = datanasc;
+	public void setDataNasc(Calendar dataNasc) {
+		this.dataNasc = dataNasc;
 	}
 	
 
