@@ -13,21 +13,16 @@ public class Cadastro {
 	 * para o usuário poder ser cadastrado ele precisa atender alguns requisitos.
 	 */
 	public boolean cadastrarUsuario(String email, String senha, String login, String nome, String dataNasc, boolean estudante){
-		if(email.contains("@")){
-			if(!senha.isEmpty()){
-				if(senha.length() > 6){
-					if(!login.equals("admin") && !login.equals("root")){
-						if(estudante){
-							Estudante e = new Estudante(login, email, senha, nome, null, null);
-							return true;
-						} else {
-							Professor p = new Professor(login, email, senha, nome, null);
-						}
-					}
-				}
+		if(email.contains("@") && !senha.isEmpty() && senha.length() > 6 && 
+				!login.equals("admin") && !login.equals("root")	){
+			
+			if(estudante){
+				Estudante e = new Estudante(login, email, senha, nome, null, null);
+				return true;
+			} else {
+				Professor p = new Professor(login, email, senha, nome, null);
 			}
 		}
 		return false;
 	}
-
 }
