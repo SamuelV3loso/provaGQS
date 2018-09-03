@@ -1,6 +1,6 @@
 package br.com.sisacad.model;
 
-public class Disciplinas {
+public class Disciplina {
 	
 	private String Nome;
 	private Professor prof;
