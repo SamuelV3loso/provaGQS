@@ -2,30 +2,30 @@ package br.com.sisacad.model;
 
 public class Disciplina {
 	
-	private String Nome;
-	private Professor prof;
-	private String listaDeEstudantes;
+	private String nomeDisciplina;
+	private Professor professor;
+	private String listaEstudantes;
 	private int ano;
 	private int semestre;
 	
 	
 	public String getNome() {
-		return Nome;
+		return nomeDisciplina;
 	}
-	public void setNome(String nome) {
-		this.Nome = nome;
+	public void setNome(String nomeDisciplina) {
+		this.nomeDisciplina = nomeDisciplina;
 	}
-	public Professor getProf() {
-		return prof;
+	public Professor getProfessor() {
+		return professor;
 	}
-	public void setProf(Professor prof) {
-		this.prof = prof;
+	public void setProfessor(Professor professor) {
+		this.professor = professor;
 	}
-	public String getListaDeEstudantes() {
-		return listaDeEstudantes;
+	public String getListaEstudantes() {
+		return listaEstudantes;
 	}
-	public void setListaDeEstudantes(String listaDeEstudantes) {
-		this.listaDeEstudantes = listaDeEstudantes;
+	public void setListaEstudantes(String listaEstudantes) {
+		this.listaEstudantes = listaEstudantes;
 	}
 	public int getAno() {
 		return ano;
