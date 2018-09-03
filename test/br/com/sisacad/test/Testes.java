@@ -12,49 +12,49 @@ public class Testes {
 	 * Testes de cadastros de estudantes
 	 */
 	@Test
-	public void test1() {
+	public void testeCadastrarEstudante1() {
 		Cadastro cadastro = new Cadastro();
 		boolean cadastroRealizadoComSucesso = cadastro.cadastrarUsuario("a", "a", "a", "a","a", true);
 		assertEquals(false, cadastroRealizadoComSucesso);
 	}
 	
 	@Test
-	public void test2() {
+	public void testeCadastrarEstudante2() {
 		Cadastro cadastro = new Cadastro();
 		boolean cadastroRealizadoComSucesso = cadastro.cadastrarUsuario("a@com.br", "12345678", "ze", "a","a", true);
 		assertEquals(true, cadastroRealizadoComSucesso);
 	}
 	
 	@Test
-	public void test3() {
+	public void testeCadastrarEstudante3() {
 		Cadastro cadastro = new Cadastro();
 		boolean cadastroRealizadoComSucesso = cadastro.cadastrarUsuario("acom.br", "12345678", "ze", "a","a", true);
 		assertEquals(false, cadastroRealizadoComSucesso);
 	}
 	
 	@Test
-	public void test4() {
+	public void testeCadastrarEstudante4() {
 		Cadastro cadastro = new Cadastro();
 		boolean cadastroRealizadoComSucesso = cadastro.cadastrarUsuario("a@com.br", "123", "ze", "a","a", true);
 		assertEquals(false, cadastroRealizadoComSucesso);
 	}
 	
 	@Test
-	public void test5() {
+	public void testeCadastrarEstudante5() {
 		Cadastro cadastro = new Cadastro();
 		boolean cadastroRealizadoComSucesso = cadastro.cadastrarUsuario("a@com.br", "", "ze", "a","a", true);
 		assertEquals(false, cadastroRealizadoComSucesso);
 	}
 	
 	@Test
-	public void test6() {
+	public void testeCadastrarEstudante6() {
 		Cadastro cadastro = new Cadastro();
 		boolean cadastroRealizadoComSucesso = cadastro.cadastrarUsuario("a@com.br", "12345678", "admin", "a","a", true);
 		assertEquals(false, cadastroRealizadoComSucesso);
 	}
 	
 	@Test
-	public void test7() {
+	public void testeCadastrarEstudante7() {
 		Cadastro cadastro = new Cadastro();
 		boolean cadastroRealizadoComSucesso = cadastro.cadastrarUsuario("a@com.br", "12345678", "root", "a","a", true);
 		assertEquals(false, cadastroRealizadoComSucesso);
@@ -65,49 +65,49 @@ public class Testes {
 	 * Testes de cadastros de professores
 	 */
 	@Test
-	public void test11() {
+	public void testeCadastrarProfessor1() {
 		Cadastro cadastro = new Cadastro();
 		boolean cadastroRealizadoComSucesso = cadastro.cadastrarUsuario("a", "a", "a", "a","a", false);
 		assertEquals(false, cadastroRealizadoComSucesso);
 	}
 	
 	@Test
-	public void test12() {
+	public void testeCadastrarProfessor2() {
 		Cadastro cadastro = new Cadastro();
 		boolean cadastroRealizadoComSucesso = cadastro.cadastrarUsuario("a@com.br", "12345678", "ze", "a","a", true);
 		assertEquals(true, cadastroRealizadoComSucesso);
 	}
 	
 	@Test
-	public void test13() {
+	public void testeCadastrarProfessor3() {
 		Cadastro cadastro = new Cadastro();
 		boolean cadastroRealizadoComSucesso = cadastro.cadastrarUsuario("acom.br", "12345678", "ze", "a","a", false);
 		assertEquals(false, cadastroRealizadoComSucesso);
 	}
 	
 	@Test
-	public void test14() {
+	public void testeCadastrarProfessor4() {
 		Cadastro cadastro = new Cadastro();
 		boolean cadastroRealizadoComSucesso = cadastro.cadastrarUsuario("a@com.br", "123", "ze", "a","a", false);
 		assertEquals(false, cadastroRealizadoComSucesso);
 	}
 	
 	@Test
-	public void test15() {
+	public void testeCadastrarProfessor5() {
 		Cadastro cadastro = new Cadastro();
 		boolean cadastroRealizadoComSucesso = cadastro.cadastrarUsuario("a@com.br", "", "ze", "a","a", false);
 		assertEquals(false, cadastroRealizadoComSucesso);
 	}
 	
 	@Test
-	public void test16() {
+	public void testeCadastrarProfessor6() {
 		Cadastro cadastro = new Cadastro();
 		boolean cadastroRealizadoComSucesso = cadastro.cadastrarUsuario("a@com.br", "12345678", "admin", "a","a", false);
 		assertEquals(false, cadastroRealizadoComSucesso);
 	}
 	
 	@Test
-	public void test17() {
+	public void testeCadastrarProfessor7() {
 		Cadastro cadastro = new Cadastro();
 		boolean cadastroRealizadoComSucesso = cadastro.cadastrarUsuario("a@com.br", "12345678", "root", "a","a", false);
 		assertEquals(false, cadastroRealizadoComSucesso);
