@@ -17,10 +17,10 @@ public class Cadastro {
 				!login.equals("admin") && !login.equals("root")	){
 			
 			if(estudante){
-				Estudante e = new Estudante(login, email, senha, nome, null, null);
+				Estudante novoEstudante = new Estudante(login, email, senha, nome, null, null);
 				return true;
 			} else {
-				Professor p = new Professor(login, email, senha, nome, null);
+				Professor novoProfessor = new Professor(login, email, senha, nome, null);
 			}
 		}
 		return false;
