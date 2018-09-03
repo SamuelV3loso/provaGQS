@@ -6,7 +6,7 @@ import java.util.List;
 public class Estudante extends Usuario{
 	
 	private String nomeEstudante;
-	private Calendar dataNasc; //data de nascimento
+	private Calendar dataNasc;
 	private List<Disciplina> listaDisciplinas;	
 	
 	public Estudante(String login, String email, String senha, String nomeEstudante, Calendar dataNasc, List<Disciplina> listaDisciplinas) {

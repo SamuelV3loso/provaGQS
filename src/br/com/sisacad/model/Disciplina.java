@@ -8,7 +8,6 @@ public class Disciplina {
 	private int ano;
 	private int semestre;
 	
-	
 	public String getNome() {
 		return nomeDisciplina;
 	}

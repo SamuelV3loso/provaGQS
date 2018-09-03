@@ -8,9 +8,6 @@ import br.com.sisacad.service.Cadastro;
 
 public class Testes {
 
-	/*
-	 * Testes de cadastros de estudantes
-	 */
 	@Test
 	public void testeCadastrarEstudante1() {
 		Cadastro cadastro = new Cadastro();
@@ -60,10 +57,6 @@ public class Testes {
 		assertEquals(false, cadastroRealizadoComSucesso);
 	}
 
-	
-	/*
-	 * Testes de cadastros de professores
-	 */
 	@Test
 	public void testeCadastrarProfessor1() {
 		Cadastro cadastro = new Cadastro();
